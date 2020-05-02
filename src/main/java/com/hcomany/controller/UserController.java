@@ -40,4 +40,13 @@ public class UserController {
         else
             return new ResponseEntity<UserDetails>(userInfo, HttpStatus.BAD_REQUEST);
     }
+
+    @RequestMapping(value = "/validateuser/{id}/{password}", method = RequestMethod.GET)
+    public ResponseEntity<UserDetails> getUserInfo(@PathVariable("id") String userID ,@PathVariable("password") String password) {
+        UserDetails userInfo = userService.authenticUser(userID,password);
+        if (userInfo != null)
+            return new ResponseEntity<UserDetails>(userInfo, HttpStatus.OK);
+        else
+            return new ResponseEntity<UserDetails>(userInfo, HttpStatus.BAD_REQUEST);
+    }
 }

@@ -20,5 +20,14 @@ public class UserServiceDAO {
         return userDetailsList.get(userID);
     }
 
+    public UserDetails validateUser(String userID,String password){
+
+        UserDetails userDetails=userDetailsList.get(userID);
+        if(userDetails.getPassword().equals(password)){
+            return  userDetails;
+        }
+        return null;
+    }
+
 
 }

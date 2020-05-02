@@ -18,6 +18,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDetails authenticUser(String userID, String password) {
-        return null;
+        return userDAO.validateUser(userID,password);
     }
 }
