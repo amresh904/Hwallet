@@ -1,0 +1,6 @@
+com/hcomany/hwallet/service/UserService.class
+com/hcomany/hwallet/pojo/UserDetails.class
+com/hcomany/hwallet/HwalletApplication.class
+com/hcomany/hwallet/dao/UserServiceDAO.class
+com/hcomany/hwallet/service/UserServiceImpl.class
+com/hcomany/hwallet/pojo/Address.class
