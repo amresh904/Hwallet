@@ -6,8 +6,6 @@ import com.hcomany.hwallet.pojo.TransactionDetails;
 import com.hcomany.hwallet.pojo.UserDetails;
 import com.hcomany.hwallet.service.AccountService;
 import com.hcomany.hwallet.service.AccountServiceImpl;
-import com.hcomany.hwallet.service.UserService;
-import com.hcomany.hwallet.service.UserServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
